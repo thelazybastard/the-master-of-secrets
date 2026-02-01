@@ -45,6 +45,17 @@ def crack_time(entropy_bits, guesses_per_second=1e9):
     return years
 
 
+def display_strength():
+    password = generate_password()
 
+    if password is None:
+        return
+
+    ent = calculate_entropy(password)
+    year = crack_time(ent)
+
+
+    print(f"Password: {password}")
+    print(f"Estimated crack time: {year:.2e} years")
 
 main()
