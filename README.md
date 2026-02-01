@@ -1,4 +1,4 @@
-# The Master of Secrets - Password Generator
+# The Master of Secrets 
 
 A Python-based secure password generator that creates strong 20-character passwords and calculates their cryptographic strength.
 
