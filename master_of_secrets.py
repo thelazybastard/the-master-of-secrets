@@ -19,7 +19,7 @@ def generate_password():
 
     if user_input == "Yes":
         characters = string.ascii_letters + string.digits + string.punctuation
-        password = ''.join(secrets.choice(characters) for i in range(20))
+        password = ''.join(secrets.choice(characters) for _ in range(20))
         return password
     elif user_input == "No":
         print ("Come back soon!")
