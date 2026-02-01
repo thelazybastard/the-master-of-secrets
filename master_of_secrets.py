@@ -58,4 +58,3 @@ def display_strength():
     print(f"Password: {password}")
     print(f"Estimated crack time: {year:.2e} years")
 
-main()
